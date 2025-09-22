@@ -8,12 +8,18 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+// The basename should match your GitHub repository name
+const repoName = "/day-draft-do";
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* The 'basename' prop is added here. 
+        This is essential for React Router to work correctly on GitHub Pages.
+      */}
+      <BrowserRouter basename={repoName}>
         <Routes>
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
