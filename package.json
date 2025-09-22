@@ -1,7 +1,8 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "day-draft-do",
+  "version": "0.1.0",
+  "homepage": "https://learnforfun08-dev.github.io/day-draft-do",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
